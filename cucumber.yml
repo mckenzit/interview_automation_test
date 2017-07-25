@@ -1,0 +1,8 @@
+default: --tags @successful
+firefox_farm_drop_sign_in: -p firefox -p staging -p selenium --tags @successful
+chrome_farm_drop_sign_in: -p chrome -p staging -p watir --tags @successful
+staging: TEST_ENV='staging'
+chrome: BROWSER='chrome'
+firefox: BROWSER='firefox'
+selenium: DRIVER='Selenium'
+watir: DRIVER='Watir'
